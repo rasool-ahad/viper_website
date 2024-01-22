@@ -1,0 +1,132 @@
+$title-color: #000;
+$medium-Color: #534f4f;
+$desc-color: #999;
+$main-color: #16B09F;
+$light-color: #fff;
+
+.app-access {
+  background: #f9f9f9 !important;
+}
+.coleredSection {
+  background: #f9f9f9 !important;
+}
+.whiteSection {
+  background: #fff;
+}
+.tradePageFaq {
+  padding-top: 0 !important;
+}
+.quicka-access,
+.tradePageFaq,
+.whiteSection,
+.coleredSection {
+  width: 100%;
+  padding: 70px 0;
+  overflow: hidden;
+  background: #fff;
+  .container {
+    padding: 0 70px;
+  }
+  .col-xxl-5 {
+    padding: 0;
+  }
+  .quicka-access-content {
+    .download-items {
+      .item {
+        padding: 16px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        border: 1px solid rgba(29, 29, 29, 0.1);
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        &:hover {
+          background: #fff;
+          cursor: pointer;
+          opacity: 0.7;
+        }
+        img {
+          width: 26px;
+          height: 26px;
+        }
+        .name {
+          margin-right: 12px;
+          font-size: 14px;
+          font-family: "yekanMedium";
+        }
+      }
+      .scan {
+        img {
+          width: 70px;
+          height: 70px;
+          object-fit: cover;
+        }
+        .text {
+          margin-right: 10px;
+          span {
+            font-size: 14px;
+          }
+          p {
+            margin-top: 10px;
+            font-family: "yekanMedium";
+          }
+        }
+      }
+    }
+  }
+  .quicka-ccess-img {
+    text-align: center;
+    img {
+      width: 450px;
+    }
+  }
+}
+.quicka-access {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 992px) {
+  .quicka-access {
+    .quicka-ccess-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .quicka-access {
+    .container {
+      padding: 0 20px;
+    }
+  }
+  .quicka-access,
+  .whiteSection,
+  .coleredSection {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .quicka-access {
+    .quicka-ccess-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .quicka-access .quicka-access-content .download-items .item .name {
+    font-size: 12px;
+    text-align: right;
+  }
+  .quicka-access .quicka-access-content .download-items .item {
+    padding: 12px;
+  }
+  .quicka-access .quicka-access-content .download-items .scan .text span {
+    font-size: 12px;
+  }
+}

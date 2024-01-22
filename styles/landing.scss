@@ -1,0 +1,159 @@
+.landinPageContent {
+  .cryptoContentSection {
+    padding: 0 70px;
+    margin-bottom: 32px;
+    h2 {
+      font-size: 25px;
+      padding-right: 14px;
+    }
+    h2:not(:nth-child(1)) {
+      margin-top: 32px;
+    }
+    h2::before {
+      content: "";
+      background-color: #16B09F;
+      width: 4px;
+      height: 28px;
+      right: 0;
+      border-radius: 1px;
+      margin-top: 2px;
+      position: absolute;
+    }
+    p {
+      text-align: justify;
+      font-size: 16px;
+      line-height: 32px;
+      a {
+        color: #16B09F;
+        font-family: "yekanMedium";
+      }
+    }
+    .importantText {
+      background: rgba(1, 188, 141, 0.16);
+      padding: 20px 24px;
+      color: #038677 !important;
+      border-radius: 8px;
+      font-family: "yekanExtraBold" !important;
+      margin-top: 16px;
+    }
+  }
+  .cryptoSidbar {
+    .coinexToDigiex24 {
+      margin-top: -50px;
+      width: 100%;
+    }
+  }
+  .zeroFeePage {
+    .intro-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .desc {
+        font-size: 18px;
+        font-family: "yekanMedium" !important;
+        line-height: 36px;
+      }
+      .title {
+        margin-bottom: 0;
+        .titleFocus {
+          font-size: 36px;
+          font-family: "yekanBlack" !important;
+          color: #16B09F;
+        }
+      }
+    }
+    .item {
+      .title {
+        text-align: center;
+      }
+      .desc {
+        text-align: center;
+      }
+    }
+    .landingIntroImage {
+      img {
+        width: 100%;
+      }
+    }
+    .ctaButton {
+      font-size: 18px !important;
+      font-family: "yekanExtraBold";
+      height: 56px;
+    }
+  }
+}
+.ctaStickyButton {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .d-md-none {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .landinPageContent {
+    .zeroFeePage {
+      .intro-content {
+        .title {
+          font-size: 25px;
+          font-family: "yekanBlack" !important;
+          text-align: center;
+
+          .titleFocus {
+            font-size: 28px;
+            font-family: "yekanBlack" !important;
+          }
+        }
+        .desc {
+          line-height: 32px;
+          text-align: center;
+        }
+      }
+    }
+    .ctaStickyButton {
+      display: flex;
+      position: -webkit-sticky;
+      position: sticky;
+      bottom: 12px;
+      z-index: 100000;
+      font-size: 18px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landinPageContent {
+    .cryptoContentSection {
+      padding: 0 70px;
+      margin-bottom: 32px;
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 22px;
+      }
+    }
+    .zeroFeePage {
+      .col-4 {
+        padding: 0;
+        .item {
+          padding: 0 !important;
+          margin-top: 30px;
+          .title {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .justify-content-space-between {
+        gap: 30px;
+      }
+    }
+    .d-sm-none {
+      display: none;
+    }
+  }
+}

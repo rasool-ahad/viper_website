@@ -1,0 +1,1882 @@
+@import "./Home.scss";
+@import "./navbar.scss";
+@import "./responcive.css";
+@import "./intro.scss";
+@import "./signUpTabs.scss";
+
+$title-color: #000;
+$medium-Color: #534f4f;
+$desc-color: #999;
+$main-color: #16b09f;
+$green-color: #16b09f;
+$light-color: #fff;
+$paragraph-color: #212223;
+$radius: 8px;
+
+@font-face {
+  font-family: "yekanBlack";
+  src: url("../public//fonts/dana/woff/dana-black.woff") format("woff");
+  src: url("../public/fonts/dana/woff2/dana-black.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "yekanExtraBold";
+  src: url("../public/fonts/dana/woff/dana-bold.woff") format("woff");
+  src: url("../public/fonts/dana/woff2/dana-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "yekanMedium";
+  src: url("../public/fonts/dana/woff/dana-medium.woff") format("woff");
+  src: url("../public/fonts/dana/woff2/dana-medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "yekanRegular";
+  src: url("../public/fonts/dana/woff/dana-regular.woff") format("woff");
+  src: url("../public/fonts/dana/woff2/dana-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "danaLight";
+  src: url("../public/fonts/dana/woff/dana-light.woff") format("woff");
+  src: url("../public/fonts/dana/woff2/dana-light.woff2") format("woff2");
+  font-display: swap;
+}
+
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+
+@font-face {
+  font-family: "yekanBlack";
+  src: url("../public//fonts/iranyekan/woff/iranyekanwebblackfanum.woff")
+    format("woff");
+  src: url("../public/fonts/iranyekan/woff2/iranyekanwebblackfanum.woff2")
+    format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "yekanBold";
+  src: url("../public/fonts/iranyekan/woff/iranyekanwebboldfanum.woff")
+    format("woff");
+  src: url("../public/fonts/iranyekan/woff2/iranyekanwebboldfanum.woff2")
+    format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "yekanExtraBold";
+  src: url("../public/fonts/iranyekan/woff/iranyekanwebextraboldfanum.woff")
+    format("woff");
+  src: url("../public/fonts/iranyekan/woff2/iranyekanwebextraboldfanum.woff2")
+    format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "yekanMedium";
+  src: url("../public/fonts/iranyekan/woff/iranyekanwebmediumfanum.woff")
+    format("woff");
+  src: url("../public/fonts/iranyekan/woff2/iranyekanwebmediumfanum.woff2")
+    format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "yekanRegular";
+  src: url("../public/fonts/iranyekan/woff/iranyekanwebregularfanum.woff")
+    format("woff");
+  src: url("../public/fonts/iranyekan/woff2/iranyekanwebregularfanum.woff2")
+    format("woff2");
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "yekanRegular";
+}
+
+body {
+  font-family: "yekanRegular";
+  font-size: 14px;
+  overflow-x: hidden;
+  background: rgb(255, 255, 255);
+}
+
+.btn-main {
+  background-color: $main-color;
+  color: $light-color;
+  padding: 10px 15px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-family: "yekanMedium";
+  border-radius: 50px;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.pointer {
+  cursor: pointer;
+}
+b {
+  font-weight: bold;
+}
+.flexColumn {
+  flex-direction: column;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-15 {
+  gap: 15px;
+}
+.gap-20 {
+  gap: 20px;
+}
+.block {
+  display: block;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.align-items-end {
+  align-items: end;
+}
+h1 {
+  font-size: 30px;
+  line-height: 48px;
+  font-family: "yekanBlack" !important;
+}
+h2 {
+  font-size: 26px;
+  font-family: "yekanExtraBold" !important;
+  margin: 0 0 12px 0;
+}
+p {
+  line-height: 32px;
+  font-size: 15px;
+  color: $paragraph-color !important;
+}
+.grayBgLow {
+  background-color: #f9f9f9 !important;
+}
+.contentImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0 20px 0;
+}
+.coinsTextWrapper {
+  .footer-content {
+    max-height: 700px;
+  }
+  .show-more {
+    cursor: pointer;
+    padding: 16px 64px;
+  }
+  h1,
+  h2 {
+    font-size: 20px;
+    color: #000;
+    font-family: "yekanMedium" !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  h2 {
+    margin: 16px 0 0 0 !important;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: #000;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    position: relative;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  h3::before {
+    content: "";
+    background-color: $green-color;
+    height: 4px;
+    width: 12px;
+    right: 0;
+    border-radius: 1px;
+    margin-top: 4px;
+    position: absolute;
+  }
+  p {
+    color: #494b51 !important;
+    font-size: 15px;
+  }
+  ul {
+    padding-right: 12px;
+  }
+  ul li {
+    list-style: disc;
+    line-height: 32px;
+  }
+}
+.bottomShadow:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgb(246 248 252) 0%,
+    rgb(246 248 252 / 30%) 100%
+  );
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.moreBtn {
+  color: #000 !important;
+  font-size: 14px !important;
+}
+.moreBtn span svg {
+  font-size: 26px !important;
+}
+a {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: $main-color !important;
+  }
+}
+.notFoundSection {
+  background: #f9f9f9;
+}
+.text_align_right {
+  text-align: right;
+}
+.margin_right0 {
+  margin-right: 0 !important;
+}
+.margin_left0 {
+  margin-right: 0 !important;
+}
+.padding_right0 {
+  padding-right: 0 !important;
+}
+.padding_left0 {
+  padding-right: 0 !important;
+}
+.tag {
+  font-size: 12px;
+  padding-right: 6px;
+}
+.tagName {
+  font-size: 12px;
+  padding-right: 0;
+  color: $medium-Color;
+}
+.quicka-access .name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.coinName {
+  .desc {
+    display: flex;
+    gap: 4px;
+    > div {
+      font-size: 12px;
+    }
+  }
+}
+.priceTable {
+  padding: 0 12px;
+  box-shadow: none !important;
+  .title,
+  td {
+    padding: 12px 0;
+    text-align: right;
+  }
+  .price {
+    font-size: 16px;
+  }
+  .deals {
+    font-size: 16px;
+  }
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #e9ebee;
+  padding: 0 12px;
+
+  div:first-child {
+    border-left: 1px solid #e9ebee;
+    padding-left: 12px;
+  }
+  div:last-child {
+    border-right: 1px solid #e9ebee;
+    padding-right: 12px;
+  }
+  .cursor-pointer {
+    color: #000 !important;
+    svg {
+      margin-top: 6px;
+    }
+  }
+}
+.quicka-access .name .text {
+  text-align: right;
+  font-family: "yekanMedium";
+}
+.quicka-access .priceTable .title p {
+  color: #9698a3;
+  font-size: 14px;
+  text-align: right;
+}
+.quicka-access .priceTable .title {
+  color: #9698a3;
+  background: #f9f9f9;
+  border-bottom: none;
+}
+.quicka-access .priceTable th {
+  padding: 10px;
+}
+.quicka-access .priceTable .item {
+  text-align: right;
+  font-family: "yekanMedium";
+
+  ul {
+    li {
+      padding-bottom: 12px;
+      font-size: 14px;
+    }
+  }
+}
+
+.priceTable td,
+.priceTable th:not(:first-child) {
+  padding-right: 0 !important;
+}
+.quicka-access .name img {
+  width: 32px;
+  height: auto;
+}
+
+.appHeader {
+  background: #fff !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #e9ebee;
+  z-index: 100 !important;
+}
+.appStiky {
+  background: #fff !important;
+  box-shadow: none !important;
+  z-index: 1 !important;
+  .otcSectionWidget {
+    margin-bottom: 24px;
+    .textFieldLable {
+      color: #000;
+      display: none;
+    }
+  }
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.buyBtn {
+  width: 70px;
+  padding: 8px 0;
+  background-color: transparent;
+  color: rgb(0, 155, 135);
+  border: 1px solid #4faf95;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  border-radius: 30px;
+  &:hover {
+    background-color: #4faf95;
+    color: #fff !important;
+    transition: all 0.2s ease-in-out;
+  }
+  li {
+    font-size: 12px;
+  }
+}
+.sellBtn {
+  width: 70px;
+  padding: 8px 0;
+  background-color: transparent;
+  border: 1px solid rgb(218, 91, 75);
+  color: rgb(218, 91, 75);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  border-radius: 30px;
+  font-size: 12px;
+  &:hover {
+    background-color: rgb(218, 91, 75);
+    color: #fff !important;
+    transition: all 0.2s ease-in-out;
+  }
+  li {
+    font-size: 12px;
+  }
+}
+.mainBtn {
+  padding: 10px 24px;
+  color: $title-color;
+  border: 1px solid $title-color;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50px;
+
+  svg {
+    margin-right: 12px;
+  }
+  &:hover {
+    background-color: rgba(29, 29, 29, 0.04);
+    color: $title-color !important;
+    border: 1px solid #000;
+  }
+}
+.btnMain {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50px;
+  height: 52px;
+  font-family: "yekanMedium" !important;
+  li {
+    font-family: "yekanMedium" !important;
+  }
+}
+.blueBtn {
+  padding: 0 32px 0 32px;
+  color: #000;
+  background: #fff;
+  &:hover {
+    color: #000 !important;
+    opacity: 0.8;
+  }
+}
+
+.whiteBtn {
+  padding: 0 24px 0 24px;
+  color: #000;
+  background: #fff;
+  &:hover {
+    color: #000 !important;
+    opacity: 0.6;
+  }
+}
+.blackBtn {
+  padding: 0 24px 0 24px;
+  color: #fff;
+  background: #000;
+  &:hover {
+    color: #fff !important;
+    opacity: 0.8;
+  }
+}
+
+.greenBtn {
+  padding: 0 24px 0 24px;
+  color: #fff;
+  background: #16b09f;
+  &:hover {
+    color: #fff !important;
+    opacity: 0.8;
+  }
+}
+.paddingBtn32 {
+  padding: 0 32px;
+}
+.width100 {
+  width: 100% !important;
+  margin-top: 0px !important;
+}
+.btnGrayBorder {
+  border: 1px solid #ddd;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+ul.list {
+  padding-right: 12px;
+  li {
+    font-size: 14px;
+    list-style: decimal;
+    padding-bottom: 12px;
+    text-align: justify;
+    line-height: 32px;
+  }
+}
+// .adsSection {
+//   margin-top: 60px;
+// }
+.introAds {
+  background: #c1e8e3;
+  display: flex;
+  align-items: center;
+  .MuiCollapse-wrapperInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .adsAlert {
+      margin-bottom: 0;
+      background: transparent !important;
+      padding: 14px 0 2px 0 !important;
+      display: flex;
+      .adsContent {
+        font-size: 14px;
+        color: #000 !important;
+        font-family: "yekanMedium" !important;
+        display: flex;
+        align-items: center;
+        .image {
+          height: 16px;
+          width: 16px;
+          margin-left: 12px;
+          margin-top: -3px;
+        }
+        .adsCTAbtn {
+          height: 28px;
+          line-height: 0 !important;
+          display: flex;
+          align-items: center;
+          border-radius: 20px;
+          margin-right: 12px;
+          background: #fff;
+          color: #000;
+          font-family: "yekanMedium" !important;
+          padding-inline: 10px;
+          svg {
+            font-size: 16px;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+    .closeBtn {
+      cursor: pointer;
+      height: 36px;
+      width: 36px;
+      position: absolute;
+      right: 24px;
+      top: 21px;
+      svg {
+        color: #000;
+      }
+    }
+  }
+}
+.appVersion {
+  padding: 1px 10px;
+  background: rgb(235 234 234);
+  border-radius: 4px;
+  margin-right: 12px;
+  font-size: 12px;
+}
+.seprator32 {
+  margin-bottom: 32px;
+}
+.seprator24 {
+  margin-bottom: 24px;
+}
+.seprator16 {
+  margin-bottom: 16px;
+}
+.grayBg {
+  background: #f9f9f9 !important;
+  .footer-content::after {
+    background: linear-gradient(transparent, #f9f9f9);
+  }
+}
+.landingContent {
+  width: 100%;
+  background-color: #fff;
+  padding: 70px 0;
+  text-align: justify;
+  .container {
+    padding: 0 70px;
+    position: relative;
+    .description {
+      .description-img {
+        position: absolute;
+        right: -180px;
+        width: 650px;
+        height: 450px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .description-content {
+    .title {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    .content {
+      p {
+        margin-bottom: 16px;
+      }
+    }
+    .item {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 24px;
+      gap: 12px;
+      .lazyImageBox {
+        width: 56px;
+        height: 56px;
+        position: relative;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+        .title {
+          font-size: 22px;
+          margin-bottom: 0 !important;
+          font-family: "yekanBold" !important;
+        }
+        .desc {
+          color: $paragraph-color;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+.coinsPage {
+  padding: 70px 0 70px 0 !important;
+  margin-top: 60px;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  .intro-content {
+    .item .title {
+      font-size: 20px !important;
+      text-align: right;
+    }
+    .item .desc {
+      text-align: right;
+      line-height: 28px;
+      color: #6d717f;
+    }
+    p {
+      color: #000 !important;
+    }
+    .title {
+      margin-bottom: 16px !important;
+      font-size: 30px;
+      color: #000;
+    }
+    .titleSpan {
+      margin-bottom: 16px;
+      color: #000;
+      background: #bce6e1;
+      padding: 9px 24px 7px 24px;
+      border-radius: 50px;
+      display: flex;
+      width: -moz-fit-content;
+      width: fit-content;
+      font-size: 14px;
+      font-family: "yekanMedium";
+    }
+  }
+  .headerImage {
+    position: absolute;
+    width: 100%;
+    // height: 100%;
+    opacity: 0.03;
+    top: 0;
+  }
+}
+.inviteFrirend {
+  .title {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+.coinsPage,
+.inviteFrirend {
+  .invitedBox {
+    background: #fff;
+    padding: 24px !important;
+    border-radius: $radius;
+    margin-top: 0 !important;
+    text-align: right !important;
+    min-height: 210px;
+
+    img {
+      margin-left: 20px;
+      margin-bottom: 6px;
+    }
+    .text {
+      .desc {
+        color: #6d717f;
+        font-size: 14px;
+        text-align: right;
+      }
+      .title {
+        margin-top: 0 !important;
+        font-size: 18px !important;
+      }
+    }
+  }
+}
+.bgWihte {
+  background: #fff !important;
+}
+.quicka-access-content {
+  text-align: justify;
+  .imegeInnerContent {
+    border: 1px solid rgb(238, 238, 238);
+    width: 70%;
+    margin: 32px auto 32px auto;
+    display: block;
+  }
+}
+.blogSection {
+  width: 100%;
+  padding: 70px 0;
+  overflow: hidden;
+  background-color: #fff;
+
+  .container {
+    padding: 0 70px;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+  }
+}
+.coinPageBlog {
+  background: #f9f9f9 !important;
+}
+.coinsBlogSection .blogSection {
+  background-color: #f9f9f9 !important;
+}
+.alertDiv {
+  border-radius: 8px !important;
+  margin-block: 12px;
+  .alertBody {
+    margin: 0;
+    padding: 16px;
+    border-radius: 12px;
+  }
+  .alertTitle {
+    font-size: 16px;
+    font-family: "yekanExtraBold";
+  }
+  .alertContent {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: justify;
+  }
+  .info {
+    margin: 0;
+    svg {
+      font-size: 24px;
+    }
+  }
+}
+
+.col-xxl-6 .item .title {
+  font-size: 24px !important;
+}
+.cryptoInfoWrapper {
+  padding: 0;
+  h1,
+  h2 {
+    font-size: 24px;
+    font-family: "yekanExtraBold" !important;
+  }
+  span {
+    font-family: "yekanExtraBold" !important;
+  }
+  a {
+    color: #1076f5;
+  }
+}
+.accordionTitle {
+  padding: 0 !important;
+}
+.accordionDetails {
+  padding: 0 !important;
+}
+.accordionTitle > div:nth-child(1) {
+  margin: 0 !important;
+  padding-left: 20px;
+}
+.accordionItem {
+  border: 1px solid #eee;
+  padding: 8px 16px;
+  border-radius: $radius;
+  margin-bottom: 12px;
+
+  > div > div > p {
+    font-family: "yekanExtraBold" !important;
+    line-height: 26px;
+  }
+}
+.customHeadTitle {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 24px;
+}
+.otcWidgetHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px !important;
+  h2 {
+    font-size: 18px;
+    margin-bottom: 0 !important;
+  }
+  .freeCommission {
+    font-size: 12px !important;
+    background: rgb(1 188 141 / 16%);
+    padding: 6px 16px;
+    color: #0a9e8d !important;
+    border-radius: 40px;
+    font-family: "yekanMedium";
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+}
+.blogList {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 24px;
+  flex-wrap: nowrap;
+  margin-top: 32px;
+
+  .content {
+    flex-direction: column;
+    .imageArea {
+      position: relative;
+      margin-bottom: 12px;
+      width: 320px;
+      height: 200px;
+      .postCategory {
+        position: absolute;
+        right: 10px;
+        bottom: 12px;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 4px 12px;
+        font-size: 10px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        color: #000;
+        svg {
+          font-size: 12px;
+          margin-left: 6px;
+          color: $main-color;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: normal;
+      color: #000;
+      line-height: 28px;
+    }
+    img {
+      border-radius: 12px;
+    }
+    .attrs {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      a {
+        background: #f0f1f5;
+        color: #000;
+        border-radius: 8px;
+        padding: 6px 12px 8px 12px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: $main-color !important;
+          background: #e8ecf8;
+        }
+        svg {
+          margin-right: 8px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.breadcrumbsList {
+  background: none;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.breadcrumbsList a svg {
+  font-size: 14px;
+  margin: 0 6px;
+}
+.cryptoContentSection {
+  padding-bottom: 70px;
+  padding-inline: 70px;
+  .row {
+    justify-content: space-between !important;
+  }
+}
+.charWidgetSection {
+  padding-bottom: 0 !important;
+  .cryptoSidbar {
+    margin-top: 0;
+  }
+}
+
+.cryptoSidbar {
+  padding-right: 32px;
+  padding-left: 0;
+
+  .SidebarContent {
+    border: 1px solid #e9ebee;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    a {
+      color: #000;
+    }
+    .sidebarHeaser {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 24px;
+      h2 {
+        font-size: 18px;
+        margin-bottom: 0 !important;
+        color: #000;
+      }
+      .miniText {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+    }
+    .sidebarWidgetContent {
+      padding: 16px;
+    }
+  }
+  .cryptoListItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+
+    &:hover {
+      color: #000 !important;
+      background: rgba(0, 13, 29, 0.02);
+      cursor: pointer;
+    }
+    .name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      img {
+        width: 32px;
+      }
+      .coinName {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        div {
+          color: #000;
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          word-break: break-word;
+          text-align: right;
+          line-height: 20px;
+          font-size: 14px;
+          font-family: "yekanMedium";
+        }
+        .nameEn {
+          padding-left: 3px;
+          font-size: 12px;
+          color: #9a9ca2;
+          font-family: "danaLight" !important;
+        }
+      }
+    }
+    .priceSetup {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+
+      .price {
+        font-family: "yekanMedium" !important;
+      }
+    }
+    .change {
+      direction: ltr;
+    }
+    .change.up {
+      color: #16b09f !important;
+    }
+    .change.down {
+      color: #9f1e1e !important;
+      font-size: 12px;
+    }
+  }
+}
+
+.detailBoxSecrion {
+  margin: 0;
+  .MuiGrid-item {
+    display: flex;
+    flex-direction: row;
+    padding-block: 0;
+    .invitedBox {
+      border: 1px solid #ddd;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 12px;
+      transition: all 0.2s ease-in-out;
+      position: relative;
+      &:hover {
+        background: rgba(1, 188, 141, 0.08);
+        border: 1px solid #16b09f;
+      }
+      img {
+        height: 36px;
+      }
+      .title {
+        font-size: 18px;
+        font-family: "yekanExtraBold";
+      }
+      .desc {
+        text-align: justify;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+#show-more,
+#show-less {
+  color: #000;
+  text-align: center;
+  margin-top: 24px;
+}
+#show-more a,
+#show-less a {
+  cursor: pointer;
+  padding: 8px 16px;
+  color: #000;
+  border: 1px solid #000;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+
+  &:hover {
+    background: #000;
+    color: #fff !important;
+  }
+}
+
+.show-more {
+  cursor: pointer;
+  padding: 10px 32px;
+  color: #000;
+  border: 1px solid #000;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50px;
+  display: inline-block;
+
+  &:hover {
+    background: rgba(29, 29, 29, 0.04);
+    color: #000 !important;
+  }
+}
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+.mt-3 {
+  margin-top: 30px;
+}
+.containerFluId {
+  position: relative;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 130px 70px 90px 70px;
+    z-index: 1;
+    position: relative;
+  }
+  .imageBackLight {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, transparent 0.5%, #000 94.14%);
+    mix-blend-mode: multiply;
+    position: absolute;
+  }
+}
+
+.pesrsonTetherLastHeadline {
+  margin-bottom: 30px;
+}
+.personTetherFaq {
+  margin-bottom: 60px;
+}
+.borderContent {
+  border: 1px solid #e9ebee;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  background: #fff;
+  margin-top: 32px;
+  .QuoteContent {
+    padding-top: 12px;
+  }
+  .QuoteIcon {
+    position: absolute;
+    top: -16px;
+    right: 16px;
+    background: #fff;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      font-size: 60px;
+    }
+  }
+  .bottomQuote {
+    bottom: -16px !important;
+    top: auto;
+    right: auto;
+    left: 16px;
+  }
+}
+.transformed {
+  transform: rotate(180deg) translate(0px, 0px);
+}
+.medias {
+  .singleMedia {
+    background: #fff;
+    border-radius: $radius;
+    padding: 12px 24px;
+    text-align: center;
+    p {
+      margin-bottom: 0;
+      border-top: 1px solid #e9ebee;
+      padding-top: 12px;
+      margin-top: 8px;
+    }
+    img {
+      height: 52px;
+    }
+  }
+}
+.row .col-xxl-12 {
+  padding: 0;
+}
+.referralPage {
+  text-align: center;
+}
+.otcSectionWidget {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e9ebee;
+}
+.cryptoSidbar {
+  .otcWidgetTabs .MuiTabs-flexContainer {
+    height: 60px;
+  }
+
+  .otcWidgetTabs .widgetTab {
+    height: 60px;
+  }
+}
+.referralTable {
+  .row {
+    flex-direction: column;
+    align-content: center;
+
+    .resTableWrapper {
+      width: 60%;
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px;
+      .Rtable {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        .Rtable-row:last-child {
+          border-bottom: none !important;
+        }
+        .Rtable-row:nth-child(1) {
+          border-bottom: none;
+        }
+        .Rtable-row {
+          width: 100%;
+          display: flex;
+          transition: all 0.2s ease-in-out;
+          position: relative;
+          border-bottom: 1px solid rgba(29, 29, 29, 0.08);
+          .price {
+            font-size: 14px;
+            font-family: "yekanMedium" !important;
+          }
+          .priceTag {
+            font-size: 12px;
+          }
+          .Rtable-cell {
+            .coinNumberFlex {
+              .ltrDirection {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                .price {
+                  direction: ltr;
+                }
+              }
+            }
+          }
+        }
+        .coinWalletListIcon {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          .rating {
+            height: 24px;
+            width: 24px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            svg {
+              font-size: 32px;
+              color: #c4cad9;
+            }
+            span {
+              position: absolute;
+              color: #fff;
+              font-size: 10px;
+              top: 2px;
+              font-family: "yekanExtraBold";
+            }
+          }
+          .one svg {
+            color: rgb(248, 178, 0);
+          }
+          .tow svg {
+            color: #9298a9;
+          }
+          .three svg {
+            color: #e97751;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dashboardBox .Rtable .Rtable-row:nth-child(1) {
+  background: transparent;
+  border-bottom: 1px solid rgba(29, 29, 29, 0.08);
+}
+.dashboardBox .Rtable .Rtable-row .Rtable-cell.column-heading {
+  padding: 12px;
+}
+.dashboardBox .Rtable .Rtable-row .Rtable-cell:not(.balanceAndToman) {
+  padding: 12px;
+}
+.Rtable .Rtable-row:nth-child(1) {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.balanceAndToman {
+  display: none;
+}
+.flexHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.Rtable .Rtable-row .Rtable-cell:not(.balanceAndToman) {
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 20px 16px;
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.Rtable .userNumber {
+  direction: ltr;
+}
+.Rtable .Rtable-row:not(:nth-child(1)):hover {
+  background: #f5f5f5;
+  cursor: pointer;
+}
+.Rtable .Rtable-row .Rtable-cell.column-heading {
+  color: rgb(112, 122, 138);
+  padding: 16px;
+}
+.Rtable .Rtable-row .Rtable-cell .Rtable-cell--heading {
+  display: none;
+}
+.Rtable .Rtable-row .Rtable-cell .Rtable-cell--content a {
+  font-size: 2em;
+  color: #333;
+}
+.Rtable .Rtable-row .Rtable-cell .Rtable-cell--content .webinar-date {
+  font-weight: 700;
+}
+
+/* Table column sizing
+================================== */
+
+.coinNameCell {
+  width: 25%;
+}
+
+.sellPriceCell {
+  width: 25%;
+}
+
+.balanceCell {
+  width: 25%;
+}
+.convertToToman {
+  width: 25%;
+}
+
+.help-loading {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailBoxSecrion {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .landingContent .description .description-img img {
+    right: -320px;
+  }
+  .landingContent .quicka-ccess-img .content {
+    width: 100%;
+  }
+  .contentImage img {
+    width: 100%;
+  }
+  .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .landingContent {
+    .container {
+      .description {
+        .description-img {
+          position: absolute;
+          width: 550px;
+          height: 380px;
+        }
+      }
+    }
+  }
+  .aboutUsHeader {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 22px;
+  }
+  .landingContent .quicka-ccess-img {
+    margin-top: 40px;
+  }
+  .landingContent .description .description-img img {
+    position: initial;
+  }
+  p {
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  .justifyContentCenter {
+    justify-content: center;
+  }
+  .coinsPage {
+    .invitedBox {
+      margin-bottom: 24px !important;
+    }
+  }
+  .blogList {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+
+    .content {
+      flex-direction: column;
+    }
+    h3 {
+      height: 60px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+    img {
+      width: 250px;
+    }
+  }
+  .cryptoSidbar {
+    padding-right: 0;
+    margin-top: 24px;
+  }
+  .tetherSection {
+    margin-top: 24px;
+  }
+  .containerFluId .container {
+    flex-direction: column;
+  }
+  .resTableWrapper {
+    width: 100% !important;
+  }
+  .landingContent {
+    padding: 50px 0;
+    .container {
+      .description {
+        .description-img {
+          position: relative;
+          width: 90%;
+          height: 250px;
+          right: 0;
+          margin: 0 auto 20px auto;
+        }
+      }
+    }
+  }
+  .introAds {
+    .MuiCollapse-wrapperInner {
+      .adsAlert {
+        padding: 0 !important;
+        .adsContent {
+          font-family: "yekanRegular" !important;
+        }
+      }
+      .closeBtn {
+        top: 4px;
+      }
+    }
+  }
+  .aboutUsHeader {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    line-height: 28px;
+    font-size: 14px;
+  }
+  .aboutUsHeader {
+    margin-top: 30px;
+  }
+  .introAds {
+    .MuiCollapse-wrapperInner {
+      .adsAlert {
+        padding: 0 !important;
+        font-size: 10px;
+        .adsContent {
+          font-size: 12px;
+          color: #000 !important;
+          .image {
+            height: 14px;
+            width: 14px;
+            margin-left: 8px;
+          }
+          .adsCTAbtn {
+            height: 24px;
+            margin-right: 8px;
+            background: #fff;
+            color: #000;
+            font-size: 10px;
+            font-family: "yekanMedium" !important;
+            padding-inline: 10px;
+
+            svg {
+              font-size: 12px;
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+      .closeBtn {
+        right: 4px;
+        top: 3px;
+        svg {
+          color: #000;
+        }
+      }
+    }
+  }
+  .landingContent {
+    .description {
+      .col-sm-12 {
+        padding: 0;
+      }
+      .description-img {
+        img {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+      }
+    }
+    .description-content {
+      .item {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 20px;
+        gap: 12px;
+        flex-direction: row;
+        img {
+          width: 52px;
+        }
+        .text {
+          gap: 12px;
+          .title {
+            font-size: 16px;
+          }
+          .desc {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  footer .footer-item .title {
+    font-size: 16px !important;
+  }
+  footer .footer-item .links a {
+    font-size: 12px !important;
+    margin-bottom: 12px !important;
+  }
+  footer .footer-item .links {
+    margin-top: 12px !important;
+  }
+  footer .footer-item {
+    margin-top: 16px !important;
+    margin-bottom: 4px !important;
+  }
+  .quicka-access-content {
+    .imegeInnerContent {
+      width: 100%;
+    }
+  }
+  .landingContent {
+    .container {
+      padding: 0 20px;
+    }
+  }
+  .coinsTextWrapper p {
+    font-size: 14px;
+  }
+  .coinsTextWrapper h1,
+  .coinsTextWrapper h2 {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .coinsTextWrapper h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .mainBtn,
+  .show-more {
+    padding: 8px 16px;
+  }
+  .mainBtn svg {
+    display: none;
+  }
+  .blogList {
+    .content {
+      .imageArea {
+        margin-bottom: 12px;
+        width: 240px;
+        height: 150px;
+        img {
+          width: 220px;
+        }
+      }
+      h3 {
+        line-height: 24px;
+        font-size: 13px;
+      }
+    }
+  }
+  .tetherSection {
+    padding: 32px 24px;
+    .content {
+      .priceSetup {
+        span {
+          font-size: 14px;
+        }
+      }
+      .firstRow {
+        .name {
+          .coinName {
+            gap: 4px;
+            .faName {
+              font-size: 16px;
+            }
+            .desc > div {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .secondRow {
+        margin-top: 32px;
+        .btn-group {
+          margin-top: 16px;
+          a {
+            padding: 10px 0 !important;
+          }
+        }
+      }
+      .thirdSec {
+        margin-top: 24px;
+      }
+    }
+  }
+  .aboutUsHeader .cryptoDataWrapper h1 {
+    font-size: 24px;
+  }
+  .coinsPage {
+    .intro-content .titleSpan {
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+  .referralTable .row .resTableWrapper {
+    padding: 0;
+  }
+  .landingContent .description-content .item .lazyImageBox {
+    height: 46px !important;
+    width: 46px !important;
+  }
+  .detailBoxSecrion {
+    .MuiGrid-item {
+      .invitedBox {
+        .title {
+          font-size: 18px;
+        }
+        .desc {
+          text-align: justify;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+  // .adsSection {
+  //   margin-top: 29px !important;
+  // }
+  .cryptoContentSection {
+    margin-top: 0;
+    padding-top: 20px !important;
+  }
+  .is-striped {
+    background-color: white;
+  }
+  .Rtable--collapse {
+    display: block;
+    width: 100%;
+    box-shadow: none;
+  }
+  .Rtable--collapse .Rtable-row {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Rtable--collapse .Rtable-row .Rtable-cell {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    padding: 12px 0 !important;
+  }
+  .Rtable--collapse .Rtable-row .Rtable-cell .Rtable-cell--heading {
+    flex: 1;
+    max-width: 120px;
+    min-width: 120px;
+    color: #43bac0;
+    font-weight: 700;
+  }
+  .Rtable--collapse .Rtable-row .Rtable-cell .Rtable-cell--content {
+    flex: 2;
+    gap: 6px;
+  }
+  .Rtable--collapse .buyPriceCell {
+    font-weight: 700;
+    /* order: -1; */
+  }
+  .Rtable--collapse .buyPriceCell .Rtable-cell--content {
+    padding-left: 0 !important;
+  }
+  .Rtable--collapse .Rtable-row--head {
+    display: none !important;
+  }
+  .Rtable-cell--heading {
+    display: none;
+  }
+  .buyPriceCell,
+  .sellPriceCell,
+  .balanceCell,
+  .operation,
+  .convertToToman {
+    display: none !important;
+  }
+  .balanceAndToman .Rtable-cell--content {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .fullDrawerBtn {
+    display: flex !important;
+    height: 50px;
+    top: 0;
+    min-width: 50px !important;
+  }
+  .Rtable--collapse .Rtable-row {
+    background: #fff;
+    border-bottom: none !important;
+    margin-bottom: 8px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px;
+  }
+  .resTableWrapper {
+    background: transparent !important;
+  }
+  .coinsPage {
+    margin-top: 35px;
+    padding: 50px 0 50px 0 !important;
+  }
+}
+@media screen and (max-width: 567px) {
+  .landingContent .description .description-img img {
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+
+  .container {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+  .cryptoInfoWrapper {
+    .container {
+      padding: 0 !important;
+    }
+  }
+  nav .btn-group .supportBtn {
+    min-width: 36px;
+    margin-left: -10px !important;
+  }
+}

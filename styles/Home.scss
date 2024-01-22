@@ -1,0 +1,415 @@
+$title-color: #000;
+$medium-Color: #534f4f;
+$desc-color: #999;
+$main-color: #16b09f;
+$light-color: #fff;
+$radius: 8px;
+
+.home {
+  color: red;
+}
+.buySellSection {
+  padding: 40px 70px;
+}
+.cryptoDataWrapper {
+  .container {
+    padding: 0 70px;
+  }
+}
+.exploreBtn a {
+  font-size: 14px !important;
+  color: $title-color;
+}
+
+.priceSpan {
+  color: #000 !important;
+  font-weight: normal !important;
+  font-size: 28px !important;
+  font-family: "yekanExtraBold" !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  span {
+    font-size: 16px;
+  }
+}
+.infoWrapper {
+  background: #f9f9f9;
+  padding: 42px 0;
+  margin-top: 73px;
+  h2 {
+    color: #000;
+    font-family: "yekanExtraBold" !important;
+  }
+  p {
+    color: #000;
+    font-family: "yekanMedium";
+  }
+  .MuiSlider-valueLabelLabel {
+    color: #000;
+  }
+}
+.bodyInfoWrapper {
+  background: #f9f9f9 !important;
+}
+.priceUsdtSpan {
+  font-size: 16px !important;
+}
+.pricePrecentSpan {
+  font-size: 16px !important;
+}
+.pricePrecentSpan.up {
+  color: #16b09f !important;
+}
+.pricePrecentSpan.down {
+  color: #9f1e1e !important;
+}
+.buySellBtn {
+  border-radius: 50px !important;
+  background-color: #000 !important;
+  padding: 10px 32px !important;
+  transition: all 0.2s ease-in-out !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+.buySellBtn svg {
+  margin-right: 12px;
+}
+.buySellBtn:hover {
+  box-shadow: none !important;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.cryptoInfoInnerWrapper .leftContent {
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cryptoInfoWrapper {
+  .cryptoInfoInnerWrapper {
+    display: flex;
+    row-gap: 10px;
+    margin-top: 32px;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 38px !important;
+      height: auto !important;
+      min-width: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .cryptoInfo {
+      .cryptoInfoInner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .MuiChip-root {
+          border-radius: $radius;
+          height: auto;
+        }
+
+        .MuiButton-root {
+          min-width: 42px;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .embedVideo {
+    iframe {
+      position: relative;
+      height: 450px;
+    }
+    span {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+.thumbSlider {
+  .MuiSlider-thumb {
+    transform: translate(-50%, 30%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 6px 0 6px;
+    border-color: #bdbdbd transparent transparent transparent;
+    border-radius: 0;
+    background-color: transparent;
+    top: 0;
+  }
+
+  .MuiSlider-valueLabelOpen {
+    background: transparent;
+    padding: 0;
+    color: $title-color;
+    font-size: 14px;
+  }
+}
+
+.chartWrapper {
+  margin-top: 10px;
+}
+
+.apexcharts-yaxis {
+  transform: translate(0, 0);
+
+  text {
+    font-size: 16px;
+    fill: #a4a6b4;
+  }
+}
+
+.chartTabBar {
+  .MuiTabs-root {
+    background: #e9ecf3;
+    border-radius: 6px;
+    padding: 5px;
+  }
+
+  .indicatorStyles {
+    height: 100% !important;
+    border-radius: 6px;
+    background: #ffffff;
+  }
+
+  .MuiTab-root {
+    z-index: 1;
+    font-size: 16px;
+    padding: 5px;
+    min-height: 38px;
+    width: 33%;
+
+    &.Mui-selected {
+      color: #81848d;
+    }
+  }
+}
+.topTabBar {
+  .MuiTabs-root {
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .MuiTabs-flexContainer {
+    gap: 10px;
+  }
+
+  .indicatorStyles {
+    height: 100% !important;
+    border-radius: $radius;
+    background: #f3f6ff;
+    border: 1px solid #0642df;
+  }
+
+  .MuiTab-root {
+    z-index: 1;
+    color: $title-color;
+    font-size: 14px;
+    padding: 6px 12px;
+    min-height: 38px;
+
+    &.Mui-selected {
+      color: #0642df;
+    }
+  }
+}
+
+.textStyle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  position: relative;
+
+  h2 {
+    line-height: 35px;
+  }
+
+  p {
+    line-height: 32px;
+    text-align: justify;
+  }
+
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+// .bottomShadow {
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     bottom: 0;
+//     height: 150px;
+//     background: rgb(255, 255, 255);
+//     background: linear-gradient(
+//       0deg,
+//       rgba(255, 255, 255, 1) 0%,
+//       rgba(255, 255, 255, 0) 100%
+//     );
+//     width: 100%;
+//     left: 0;
+//     right: 0;
+//   }
+// }
+.contentImage {
+  text-align: center;
+}
+.faqWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  .faqWrapperTitle {
+    p {
+      color: $desc-color;
+    }
+  }
+
+  .MuiAccordionSummary-expandIconWrapper {
+    position: absolute;
+    left: 0;
+  }
+  .apexcharts-canvas .faqWrapperCard {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.registerOffCode {
+  &.friends {
+    width: 100%;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 70px;
+    @media (max-width: 576px) {
+      padding: 20px;
+    }
+    .title {
+      color: $title-color;
+      margin: 20px 0;
+      font-size: 25px;
+    }
+
+    .desc {
+      color: $medium-Color;
+      margin: 10px 0;
+    }
+
+    .links {
+      margin-top: 40px;
+
+      a {
+        margin: 0 30px;
+        color: $light-color;
+      }
+
+      .btn-main.white {
+        background-color: $light-color;
+        color: #000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .infoWrapper {
+    margin-top: 66px;
+  }
+  .embedVideo {
+    iframe {
+      position: relative;
+      height: 350px !important;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .infoWrapper {
+    margin-top: 60px;
+  }
+  .embedVideo {
+    iframe {
+      position: relative;
+      height: 400px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cryptoInfoWrapper {
+    .container {
+      padding: 0 20px;
+    }
+  }
+  .buySellSection {
+    padding: 50px 0px !important;
+  }
+  .cryptoInfoWrapper .cryptoInfoInnerWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .cryptoInfoInnerWrapper .leftContent {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100% !important;
+    .priceSpan {
+      font-size: 24px !important;
+    }
+    .buySellBtn {
+      padding: 10px 20px !important;
+    }
+  }
+  .buttonContent {
+    width: 100% !important;
+  }
+  .infoWrapper {
+    margin-top: 36px;
+    padding: 24px 0;
+  }
+  .embedVideo {
+    iframe {
+      position: relative;
+      height: 250px !important;
+    }
+  }
+}

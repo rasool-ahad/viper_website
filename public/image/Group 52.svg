@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 52</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="index" transform="translate(-1294.000000, -1090.000000)">
+            <g id="Group-52" transform="translate(1294.000000, 1090.000000)">
+                <path d="M12,0 L30,0 C36.627417,-1.21743675e-15 42,5.372583 42,12 L42,30 C42,36.627417 36.627417,42 30,42 L12,42 C5.372583,42 8.11624501e-16,36.627417 0,30 L0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="Rectangle" fill="#F6F0D8" transform="translate(21.000000, 21.000000) rotate(90.000000) translate(-21.000000, -21.000000) "></path>
+                <g id="binance-usd-busd-logo-(1)" transform="translate(9.000000, 9.000000)"></g>
+                <g id="Group-13" transform="translate(9.000000, 9.000000)" fill="#F0B90B" fill-rule="nonzero" stroke="#F0B90B">
+                    <polygon id="Path" points="12 0 14.9731343 3.04477612 7.48656716 10.5313433 4.51343284 7.55820896"></polygon>
+                    <polygon id="Path" points="16.5134328 4.51343284 19.4865672 7.55820896 7.48656716 19.558209 4.51343284 16.5850746"></polygon>
+                    <polygon id="Path" points="2.97313433 9.02686567 5.94626866 12.0716418 2.97313433 15.0447761 0 12.0716418"></polygon>
+                    <polygon id="Path" points="21.0268657 9.02686567 24 12.0716418 12 24.0716418 9.02686567 21.0985075"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

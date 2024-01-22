@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="61px" viewBox="0 0 53 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 51</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icons" transform="translate(-1130, -357)" stroke-width="4">
+            <g id="Group-51" transform="translate(1132.1484, 359.7216)">
+                <path d="M16,36 L32,36 C40.8364,36 48,43.1636 48,52 L48,56 L0,56 L0,52 C0,43.1636 7.16344,36 16,36 Z" id="Path" stroke="#000000"></path>
+                <path d="M36,12 C36,18.6274 30.6276,24 24,24 C17.3724,24 12,18.6274 12,12 C12,5.3726 17.3724,0 24,0 C30.6276,0 36,5.3726 36,12 Z" id="Path" stroke="#16B09F"></path>
+            </g>
+        </g>
+    </g>
+</svg>
